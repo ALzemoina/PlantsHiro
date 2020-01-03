@@ -1,0 +1,36 @@
+.box-news {
+    width: 500px;
+    height: 200px;
+    border-radius: 24px;
+    box-shadow: 8px 10px 10px #bbbbbbbb;
+    background-color: #adadad;
+}
+
+.btn-hiro {
+    width: 150px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 24px;
+    box-shadow: 4px 6px 10px #a9ffde;
+    background-color: #00ffaa;
+}
+
+.btn-hiro:hover {
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 4px 6px 10px #6affb5;
+    background-color: #00ff80;
+}
+
+.circle-down {    
+    width: 50px;
+    height: 50px;
+    border-radius: 24px;
+    box-shadow: 4px 6px 10px #a9ffde;
+    background-color: #00ffaa;
+}
+
+.footer {
+    padding: 2rem 1rem;
+    background-color: #adadad;
+}
