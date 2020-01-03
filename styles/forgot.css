@@ -6,22 +6,22 @@ body{
     background: url(../background.jpg) no-repeat;
     background-size: cover;
 }
-.login-box{
-    width: 280px;
+.forgot-box{
+    width: 320px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: black;
 }
-.login-box h1{
+.forgot-box h1{
     float: left;
     font-size: 40px;
     border-bottom: 4px solid #4caf50;
     margin-bottom: 40px;
     padding: 13px 0;
 }
-.textbox{
+.text_box{
     width: 100%;
     overflow: hidden;
     font-size: 20px;
@@ -29,12 +29,7 @@ body{
     margin: 8px 0;
     border-bottom: 1px solid #4caf50;
 }
-.textbox i{
-    width: 26px;
-    float: left;
-    text-align: center;
-}
-.textbox input{
+.text_box input{
     border: none;
     outline: none;
     background: none;
@@ -44,7 +39,7 @@ body{
     float: left;
     margin: 0 10px;
 }
-.btnlogin{
+.btnsend{
     width: 100%;
     background: none;
     border: 2px solid #4caf50;
@@ -55,24 +50,8 @@ body{
     margin: 12px 0;
     border-radius: 24px;
 }
-.btnregis{
-    width: 49%;
-    background: none;
-    border: 2px solid #4caf50;
-    color: black;
-    padding: 5px;
-    font-size: 12px;
-    cursor: pointer;
-    border-radius: 24px;
-}
-.btnforgot{
-    width: 49%;
-    background: none;
-    border: 2px solid #4caf50;
-    color: black;
-    padding: 5px;
-    font-size: 12px;
-    cursor: pointer;
-    float: right;
-    border-radius: 24px;
+.text_box i{
+    width: 26px;
+    float: left;
+    text-align: center;
 }
