@@ -5,6 +5,7 @@ body{
     font-family: sans-serif;
     background-image: url(../background.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .login-box{
     width: 280px;
