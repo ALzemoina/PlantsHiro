@@ -7,17 +7,22 @@ body{
     background-size: cover;
 }
 .forgot-box{
-    width: 320px;
+    width: 400px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: black;
+    padding: 40px;
+    background: rgba(255, 255, 255, .8);
+    box-sizing: border-box;
+    box-shadow: 0 25px 35px rgba(0, 0, 0, .5);
+    border-radius: 24px;
 }
 .forgot-box h1{
     float: left;
     font-size: 40px;
-    border-bottom: 4px solid #4caf50;
+    border-bottom: 4px solid #00ffaa;
     margin-bottom: 40px;
     padding: 13px 0;
 }
@@ -27,7 +32,7 @@ body{
     font-size: 20px;
     padding: 8px 0;
     margin: 8px 0;
-    border-bottom: 1px solid #4caf50;
+    border-bottom: 1px solid #00ffaa;
 }
 .text_box input{
     border: none;
@@ -42,7 +47,7 @@ body{
 .btnsend{
     width: 100%;
     background: none;
-    border: 2px solid #4caf50;
+    border: 2px solid #00ffaa;
     color: black;
     padding: 5px;
     font-size: 18px;
