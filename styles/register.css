@@ -13,17 +13,22 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: black;
+    color: #444;
     padding: 40px;
     background: rgba(255, 255, 255, .8);
     box-sizing: border-box;
     box-shadow: 0 25px 35px rgba(0, 0, 0, .5);
     border-radius: 24px;
 }
+.fa-angle-left {
+    color: #444;
+    transform: scale(3);
+}
+
 .register-box h1{
-    float: left;
+    float: center;
+    text-align: center;
     font-size: 40px;
-    border-bottom: 4px solid #00ffaa;
     margin-bottom: 40px;
     padding: 13px 0;
 }
