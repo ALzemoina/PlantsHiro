@@ -1,89 +1,89 @@
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 
+* {
+  box-sizing: border-box;
+}
 
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px 50px ;
+  background: url(../images/background/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-  
-  * {
-    box-sizing: border-box;
-  }
+.title{
+  margin: 0;
+  color: black;
+  text-align: center;
+}
 
-  /* Add a gray background color with some padding */
-  body {
-    font-family: Arial;
-    padding: 20px 50px ;
-    background: url(../background.jpg) no-repeat;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+.akun {
+  padding: 40px;
+  background-color: aquamarine;
+  color: black;
+  border-radius: 50%;
+  text-align: right;
+}
 
-  .title{
-    margin: 0;
-    color: black;
-    text-align: center;
-  }
+.logo{
+  padding: 10px;
+}
 
-  .akun {
-    padding: 40px;
-    background-color: aquamarine;
-    color: black;
-    border-radius: 50%;
-    text-align: right;
-  }
+.logo img {
+  width: 80px;
+}
 
-  .logo{
-    padding: 10px;
-  }
-  .logo img {
-    width: 80px;
-  }
+.category .col {
+  background-color: #00ffaa;
+  margin: 5px;
+  border-radius: 12px;
+}
 
-  .category .col {
-    background-color: #00ffaa;
-    margin: 5px;
-    border-radius: 12px;}
+  .category .col:hover {
+    font-weight: 900;
+    color: white;
+    background-color: #00d890;
+    border: 2px solid #00d890;
+}
 
-    .category .col:hover{
-      font-weight: 900;
-      color: white;
-      background-color: #00d890;
-      border: 2px solid #00d890;
-  }
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
 
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .leftcolumn {
-    float: left;
-    width: 75%;
-  }
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
 
-  /* Right column */
-  .rightcolumn {
-    float: left;
-    width: 25%;
-    padding-left: 20px;
-  }
-  .card_ {
-    background-color:whitesmoke;
-    padding: 18px;
-    margin-top: 20px;
-  }
- 
+.card_ {
+  background-color:whitesmoke;
+  padding: 18px;
+  margin-top: 20px;
+}
 
-  
-  .card {
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 210px 210px 80px;
-    grid-template-areas: "image" "text" "stats";
-    border-radius: 18px;
-    background: rgba(255, 255, 255, .8);
-    box-sizing: border-box;
-    box-shadow: 0 25px 35px rgba(0, 0, 0, .5);
-    font-family: roboto;
-    text-align: center;
-    transition: 0.5 ease;
-    cursor: pointer;
-  }
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "stats";
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .8);
+  box-sizing: border-box;
+  box-shadow: 0 25px 35px rgba(0, 0, 0, .5);
+  font-family: roboto;
+  text-align: center;
+  transition: 0.5 ease;
+  cursor: pointer;
+}
+
 .card_ input {
   border: none;
   outline: none;
@@ -91,69 +91,71 @@
   color: black;
   font-size: 18px;
 }
-  .card-image {
-    grid-area: image;
-    background: url("../anggrek.jpg");
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size: cover;
-  }
 
-  .card-text {
-    grid-area: text;
-    margin: 25px;
-  }
-  .card-text .date {
-    color: rgb(255, 7, 110);
-    font-size:13px;
-  }
-  .card-text p {
-    color: grey;
-    font-size:15px;
-    font-weight: 300;
-  }
-  .card-text h2 {
-    margin-top:0px;
-    font-size:28px;
-  }
+.card-image {
+  grid-area: image;
+  background: url("../anggrek.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+
+.card-text .date {
+  color: rgb(255, 7, 110);
+  font-size:13px;
+}
+
+.card-text p {
+  color: grey;
+  font-size:15px;
+  font-weight: 300;
+}
+
+.card-text h2 {
+  margin-top:0px;
+  font-size:28px;
+}
   
  
-  .card:hover {
-    transform: scale(1.15);
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-  }
-  .card {
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card {
   
-    transition: 0.5s ease;
-    cursor: pointer;
-    margin:30px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
   }
 
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  body {
+    background-image: url(../images/background/background.jpg);
+    background-position: 55% -50px;
   }
-
-  /* Footer */
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
-  }
-
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-
-    .leftcolumn,
-    .rightcolumn {
-      width: 100%;
-      padding: 0;
-    }
-    body {
-      background: url(../background.jpg);
-      background-position: 55% -50px;
-  }
-  }
+}

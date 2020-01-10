@@ -1,9 +1,73 @@
+body {
+    font-family: sans-serif;
+}
+
+.bg-image {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url(../images/background/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 0 10px #adadad;
+    z-index: 99;
+}
+
+.navbar a {
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+.navbar .row a {
+    color: #3d3d3d;
+    text-decoration: none;
+    padding: 10px 24px;
+}
+
+.btn-plantshiro {
+    color: #fff !important;
+    background: linear-gradient(90deg, #00ffaa, #0099ff);
+    border-radius: 10rem;
+}
+
+.btn-plantshiro:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #00ffaa;
+    background: linear-gradient(90deg, #00d890, #0090d8);
+    box-shadow: 0 0 20px #a7d3c4;
+}
+
+.bg-white .btn-plantshiro {
+    align-items: center;
+}
+
 .box-news {
+    background-image: url(../images/lidah_buaya.jpg);
+    background-size: cover;
+    background-position: center;
     width: 500px;
     height: 200px;
     border-radius: 24px;
     box-shadow: 8px 10px 10px #bbbbbbbb;
     background-color: #adadad;
+}
+
+.text-light h3 {
+    font-weight: bold;
+    background: linear-gradient(90deg, #00ffaa, #0099ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .btn-hiro {
@@ -16,6 +80,7 @@
 }
 
 .btn-hiro:hover {
+    cursor: pointer;
     color: #fff;
     transform: scale(1.05);
     box-shadow: 4px 6px 10px #6affb5;
@@ -30,7 +95,74 @@
     background-color: #00ffaa;
 }
 
+#content {
+    max-width: 50%;
+    margin: auto;
+}
+
+#content h3 {
+    font-size: 3rem;
+    margin: 30px 0;
+}
+
+.row-three {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.three-main {
+    margin: 10px auto;
+    padding: 30px;
+    min-width: 300px;
+    text-align: center;
+    background-color: inherit;
+    box-shadow: 2px 2px 20px #cfcfcf;
+    border-radius: 1rem;
+}
+
+.three-main:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 50px #cfcfcf;
+}
+
+.three-main i {
+    margin: 20px 10px;
+    font-size: 4rem;
+    background: linear-gradient(90deg, #00ffaa, #0099ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.three-main h3 {
+    background: linear-gradient(90deg, #00ffaa, #0099ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.got-it .btn-plantshiro {
+    padding: 10px 20px;
+    margin: 10px auto;
+    text-align: center;
+    width: 150px;
+}
+
+.got-it .btn-plantshiro:hover {
+    cursor: pointer;
+}
+
 .footer {
     padding: 2rem 1rem;
     background-color: #adadad;
+}
+
+@media (max-width: 768px) {
+    #content {
+        max-width: 80%;
+    }
 }

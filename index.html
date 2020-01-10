@@ -6,38 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PlantsHiro</title>
-    <link rel="stylesheet" href="styles/load_page.css">
+    <!-- <link rel="stylesheet" href="styles/load_page.css"> -->
     <link rel="stylesheet" href="styles/bootstrap4.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/main.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="scripts/jquery.js"></script>
     <script src="scripts/bootstrap4.js"></script>
 </head>
 
 <body>
-    <div id="loading">loading...</div>
+    <!-- <div id="loading">loading...</div> -->
+    <div class="bg-image"></div>
     <div class="main">
-        <div class="container">
-            <div class="d-flex justify-content-between p-2">
-                <a href="index.html" class="">PlantsHiro</a>
-                <div class="row">
-                    <a href="blog/index.html" class="col">Blog</a>
-                    <a href="shop/index.html" class="col">Shop</a>
-                    <a href="login.html" class="col bg-success text-light">Login</a>
-                </div>
+        <div class="navbar d-flex justify-content-between pl-5 pr-5 pt-3 pb-3">
+            <a href="index.html">PlantsHiro</a>
+            <div class="row">
+                <a href="blog/index.html" class="col">Blog</a>
+                <!-- <a href="shop/index.html" class="col">Shop</a> -->
+                <a href="login.html" class="col btn-plantshiro">SignUp</a>
             </div>
+        </div>
+        <div class="container">
+            <div class="row m-5"></div>
             <div class="row mt-5">
                 <div class="col p-3">
                     <div class="d-flex justify-content-end">
                         <div class="box-news"></div>
                     </div>
                 </div>
-                <div class="col p-3">
+                <div class="col text-light p-3">
                     <div class="d-flex flex-column justify-content-between">
-                        <h3>Title Lorem Ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos tempora eaque qui odit omnis
-                            perferendis doloremque totam aut ut! Voluptate sed dolorum reiciendis quas, doloribus
-                            maiores. Nobis porro minima sint!</p>
+                        <h3>Lidah Buaya</h3>
+                        <p>Lidah buaya (Aloe vera) adalah sejenis tumbuhan yang sudah dikenal sejak ribuan tahun silam
+                            dan digunakan sebagai penyubur rambut, penyembuh luka, dan untuk perawatan kulit. Tumbuhan
+                            ini dapat ditemukan dengan mudah di kawasan kering di Afrika.</p>
                         <div class="btn btn-hiro">
                             <div class="d-flex justify-content-between">
                                 Get Started
@@ -47,39 +50,45 @@
                     </div>
                 </div>
             </div>
-            <div class="p-3 m-4"></div>
-            <div class="row mt-5">
-                <div class="col">
-                    <hr>
-                </div>
-                <div class="col-auto">
-                    <a href="#content">
-                        <div class="circle-down"></div>
-                    </a>
-                </div>
-                <div class="col">
-                    <hr>
-                </div>
-            </div>
             <div class="p-5 m-5"></div>
-            <div id="content" class="row mt-5">
-                <div class="col">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta placeat quia nulla assumenda
-                        voluptatibus magnam unde est veritatis esse, sunt sed ex cumque consectetur laudantium ratione.
-                        Sapiente numquam exercitationem deleniti.</p>
+        </div>
+        <div class="bg-white">
+            <div id="content" class="text-center pt-5 pb-3">
+                <h3>Plants for Global</h3>
+                <p>Tumbuhan sangatlah penting bagi kehidupan manusia, karena tumbuhan memberikan dampak yang sangat baik
+                    bagi manusia. Salah satunya adalah sebagai pelindung bumi ini dengan menjaga atmosfer bumi. Maka,
+                    marilah kita lestarikan tumbuhan agar bumi tetap bersahabat dengan kita ! </p>
+            </div>
+            <div class="row-three">
+                <div class="col-3 three-main">
+                    <i class="fab fa-pagelines"></i>
+                    <h3>Plants for us</h3>
+                    <p>Tumbuhan akan bermanfaat sangat banyak untuk kita.</p>
                 </div>
-                <div class="col">
-                    <div class="d-flex justify-content-end">
-                        <div class="box-news"></div>
-                    </div>
+                <div class="col-3 three-main">
+                    <i class="fa fa-globe"></i>
+                    <h3>Global Defender</h3>
+                    <p>Paru-paru dunia adalah tumbuhan yang akan menjaga atmosfer bumi.</p>
+                </div>
+                <div class="col-3 three-main">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Help Plants</h3>
+                    <p>Mari bantu melestarikan tumbuhan untuk kita dan orang lain !</p>
                 </div>
             </div>
+            <div class="got-it mt-5">
+                <div class="btn-plantshiro">
+                    Got it now
+                </div>
+            </div>
+            <div class="row-three p-5"></div>
         </div>
-        <div class="footer text-center mt-5">
-            &copy;PlantsHiro
+        <div class="footer text-center">
+            &copy; Website made by Team PlantsHiro - 2020
         </div>
     </div>
-    <script src="scripts/load_page.js"></script>
+
+    <!-- <script src="scripts/load_page.js"></script> -->
 </body>
 
 </html>
