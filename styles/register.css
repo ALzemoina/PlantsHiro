@@ -1,9 +1,14 @@
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+input:focus {
+    outline: none;
+}
+
 body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: url(../background.jpg) no-repeat;
+    background: url(../images/background/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -74,7 +79,7 @@ body{
 }
 @media (max-width: 768px) {
     body {
-        background: url(../background.jpg);
+        background: url(../images/background/background.jpg);
         background-position: 55% -50px;
     }
 
